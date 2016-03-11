@@ -36,6 +36,8 @@ public class AuditoriumManageState extends AbstractState {
         case 2:
             printDefaultInformation();
             break;
+        default:
+            System.err.println("Unknown action");
         }
     }
 

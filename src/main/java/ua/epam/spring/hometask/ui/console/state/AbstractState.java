@@ -14,7 +14,7 @@ import java.util.function.Function;
 public abstract class AbstractState {
     public static final String DATE_TIME_INPUT_PATTERN = "yyyy-MM-dd HH:mm";
     
-    private static Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in, "UTF-8");
     
     public void run() {
         printDefaultInformation();

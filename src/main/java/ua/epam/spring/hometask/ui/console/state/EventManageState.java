@@ -1,5 +1,7 @@
 package ua.epam.spring.hometask.ui.console.state;
 
+import java.util.Locale;
+
 import org.springframework.context.ApplicationContext;
 
 import ua.epam.spring.hometask.domain.Event;
@@ -23,7 +25,7 @@ public class EventManageState extends AbstractDomainObjectManageState<Event, Eve
 
     @Override
     protected String getObjectName() {
-        return Event.class.getSimpleName().toLowerCase();
+        return Event.class.getSimpleName().toLowerCase(Locale.ROOT);
     }
 
     @Override
@@ -78,6 +80,8 @@ public class EventManageState extends AbstractDomainObjectManageState<Event, Eve
         case 2:
             manageEventInfo();
             break;
+        default:
+            System.err.println("Unknown action");
         }
     }
 

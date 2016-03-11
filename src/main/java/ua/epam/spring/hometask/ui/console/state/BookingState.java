@@ -57,6 +57,8 @@ public class BookingState extends AbstractState {
         case 3:
             getBookedTickets();
             break;
+        default:
+            System.err.println("Unknown action");
         }
     }
 

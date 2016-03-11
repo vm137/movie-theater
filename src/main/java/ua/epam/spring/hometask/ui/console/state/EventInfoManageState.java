@@ -50,6 +50,8 @@ public class EventInfoManageState extends AbstractState {
         case 4:
             assignAuditorium();
             break;
+        default:
+            System.err.println("Unknown action");
         }
     }
 

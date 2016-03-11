@@ -1,5 +1,7 @@
 package ua.epam.spring.hometask.ui.console.state;
 
+import java.util.Locale;
+
 import org.springframework.context.ApplicationContext;
 
 import ua.epam.spring.hometask.domain.User;
@@ -30,6 +32,8 @@ public class UserManageState extends AbstractDomainObjectManageState<User, UserS
         case 1:
             findUserByEmail();
             break;
+        default:
+            System.err.println("Unknown action");
         }
     }
 
@@ -45,7 +49,7 @@ public class UserManageState extends AbstractDomainObjectManageState<User, UserS
 
     @Override
     protected String getObjectName() {
-        return User.class.getSimpleName().toLowerCase();
+        return User.class.getSimpleName().toLowerCase(Locale.ROOT);
     }
 
     @Override
