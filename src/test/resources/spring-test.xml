@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--<context:property-placeholder location="classpath:auditorium.properties"/>-->
+    <!--<context:property-placeholder location="classpath:discount.properties"/>-->
+    <!--<context:component-scan base-package="com.vlshat.spring.core.movie.theater.*"/>-->
+
+    <bean id="eventsdao" class="com.epam.spring.hometask.dao.EventsDAO"/>
+
+
+
+    <!--<bean id="discountService" class="com.vlshat.spring.core.movie.theater.service.DiscountService">-->
+        <!--<constructor-arg>-->
+            <!--<list>-->
+                <!--<ref bean="birthdayStrategy"/>-->
+                <!--<ref bean="tenthTicketStrategy"/>-->
+            <!--</list>-->
+        <!--</constructor-arg>-->
+    <!--</bean>-->
+
+    <!--<bean id="auditoriumDAO" class="com.vlshat.spring.core.movie.theater.dao.AuditoriumDAO">-->
+        <!--<constructor-arg index="0">-->
+            <!--<list>-->
+                <!--<bean class="com.vlshat.spring.core.movie.theater.entity.Aud">-->
+                    <!--<constructor-arg name="name" value="${auditorium1.name}"/>-->
+                    <!--<constructor-arg name="regularSeatsCount" value="${auditorium1.seatscount}"/>-->
+                    <!--<constructor-arg name="vipSeatsCount" value="${auditorium1.vipseatscount}"/>-->
+                <!--</bean>-->
+                <!--<bean class="com.vlshat.spring.core.movie.theater.entity.Aud">-->
+                    <!--<constructor-arg name="name" value="${auditorium2.name}"/>-->
+                    <!--<constructor-arg name="regularSeatsCount" value="${auditorium2.seatscount}"/>-->
+                    <!--<constructor-arg name="vipSeatsCount" value="${auditorium2.vipseatscount}"/>-->
+                <!--</bean>-->
+            <!--</list>-->
+        <!--</constructor-arg>-->
+
+    <!--</bean>-->
+
+    <!--<bean id="birthdayStrategy" class="com.vlshat.spring.core.movie.theater.service.discount.BirthDayStrategy">-->
+        <!--<constructor-arg value="${birthday.discount}"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="tenthTicketStrategy" class="com.vlshat.spring.core.movie.theater.service.discount.TenthTicketStrategy">-->
+        <!--<constructor-arg value="${tenthticket.discount}"/>-->
+        <!--<constructor-arg ref="ticketsDAO"/>-->
+    <!--</bean>-->
+
+
+
+</beans>
