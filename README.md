@@ -1,4 +1,4 @@
-Skeleton project for Spring Core MOOC course on university.epam.com
+Spring Core MOOC course on university.epam.com
 
 Clone the repository using your EPAM's login and password.
 
